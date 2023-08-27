@@ -15,23 +15,28 @@ class Fish {
 const nemo = new Fish('Nemo');
 
 /********************************* Scenario 1 *********************************/
-// eat(); // ?
+      // will print undefined eats fish food
+ eat();
 
 
 /********************************* Scenario 2 *********************************/
-// nemo.eat = eat;
-// nemo.eat(); // ?
+      // will print "Nemo eats fish food"
+ nemo.eat = eat;
+ nemo.eat();
 
 
 /********************************* Scenario 3 *********************************/
-// nemo.eat = eat;
-// eat(); // ?
+      // will print undefined eats fish food
+ nemo.eat = eat;
+ eat();
 
 
 /********************************* Scenario 4 *********************************/
-// nemo.swim(); // ?
+      // will print "Nemo swimming in the water"
+ nemo.swim();
 
 
 /********************************* Scenario 5 *********************************/
-// const swim = nemo.swim;
-// swim(); // ?
+      // will print "error cannot read properties of undefined"
+ const swim = nemo.swim;
+ swim();
